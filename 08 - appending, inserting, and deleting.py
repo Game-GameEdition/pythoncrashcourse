@@ -43,5 +43,12 @@ print("New list version 5:", new_list)
 
 # BREAK IT:
 # What happens if we try to del at an index that doesn't exist (an index too high)?
+# del new_list[2]
+# there's nothing at that index!
+
 # What happens if we try to remove a value that doesn't exist in the list?
+# new_list.remove("goodbye")
+# "goodbye" isnt there!
+
 # Why do the errors occur?
+# there's nothing there. what's north of the north pole? the question make sense!

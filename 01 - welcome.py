@@ -19,13 +19,18 @@ print("Hello World")
 
 # Try changing the Hello World text to something else, saving and running again.
 
+print("python >>>>> java")
 
 # BREAK IT!
 # I want you to break the code and see what kind of errors occur.
 # Try writing Hello World in the print() without the quotes, saving, and running what happens?
 # Why do you think the error occurs?
+# Answer: 
+#   TypeError: can only concatenate str (not "int") to str
+# home_distance here is interpreted as a number, not a string. They are different types of data!
 
+home_distance = 3000
+print("My house is " + home_distance + " meters away.")
 
 # AS YOUR READ THROUGH EACH SCRIPT, WHEN YOU FINISH, BE SURE TO RUN THE SCRIPT AND READ THE OUTPUT TO SEE WHAT IS GOING ON.
-
 # Each assignment will have a "BREAK IT!" section which will give you some ideas on how to break the code, either causing errors or unexpected behavior. It is good to break the code to try to understand what causes these problems so you'll know how to troubleshoot them when they occur in your own code!

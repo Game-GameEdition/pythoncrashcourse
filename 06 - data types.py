@@ -44,12 +44,24 @@ print("The value of string4 is:", string4)
 
 # What happens if we multiply a string by an integer?
 # for example:
-# print("Hello " * 10)
+print("Hello " * 10)
 # try it out! It actually works!
 
 
 # BREAK IT:
 # What happens if you try to subtract a string from a string?
+#print("hello" - "hello!")
+# "-" doesnt support str operand type
+
 # What happens if you multiply a string by a string?
+# print("hello" * "goodbye")
+# essentially, it is the same error. the types are different. terminal says "can't multiply sequence by non-int of 
+# type 'str'"
+
 # What happens if you divide an integer by zero?
+# print(num1/0)
+# the error is that you can't divide by zero :(
+
 # Why do these errors occur?
+# fundamentally, the operations/calculations you are trying to get the computer to do are unsupported by the datatypes
+# that you are using.

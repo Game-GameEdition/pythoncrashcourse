@@ -20,6 +20,19 @@ hello_world()
 # run the program and you should see "Hello World"
 # Again, you can change the print statement, and it should reflect however you changed it.
 
+def hello_world():
+    credit_card = input("Give me your credit card numbers so I can give you money! \nInput here: ")
+    print("Is this correct? " + credit_card)
+
+hello_world()
+
 # BREAK IT:
 # What happens if you move the hello_world() call above the definition of hello_world?
 # Test and see. Why do you think the error occurs?
+# Error: it uses the old definition of the hello_world() function, and asks twice (for the credit card)
+
+
+hello_world()
+
+def hello_world():
+    print("Hello, World!")

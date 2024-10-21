@@ -53,4 +53,7 @@ print(my_list)
 
 # BREAK IT
 # what happens if you try a number that is higher than the highest index of 5?
+# print("i am breaking the code:",my_list[6])
+
 # Why do you get the error?
+# there is nothing at index position 6!
