@@ -38,4 +38,7 @@ print("12.",y,"<=",z, y<=z)
 
 # BREAK IT
 # What happens if instead of writing x==z, we write x=z? What happens to x?
+# a: code such as "x == z" will NOT set the value of x to z. likewise, x = z would not work in a if.. then... 
+# conditional statement.
+
 # Remember the difference between the functionality of = vs. ==

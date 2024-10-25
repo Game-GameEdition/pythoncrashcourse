@@ -40,6 +40,16 @@ for num in my_nums:
 # BREAK IT:
 # What happens if we try to modify the loop while iterating through it?
 # For example, what if we try to remove the number from the list as we go through?
+error_total = 0
+for num in my_nums:
+    error_total = error_total + num
+    my_nums.pop()
+    print("The erroneous total is:",error_total)
+    print("The leftovers are:",my_nums)
+
+# i actually ran into this logical error while doing an exercise from a crash course book  - thanks to stackoverflow,
+# it's because python iterates starting at [0] and enging at [last index], and list.pop() removes the element at [last index].
+# very cool!
 
 # for num in my_nums:
 #     my_nums.remove(num)

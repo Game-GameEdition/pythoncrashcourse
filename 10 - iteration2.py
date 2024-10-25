@@ -29,8 +29,10 @@ for i in range(len(my_nums)):
 
 
 # BREAK IT: What happens if we try to delete everything from my nums using del by the index while iterating through?
-# for i in range(len(my_nums)):
-#     del my_nums[i]
-#     print(my_nums)
+for i in range(len(my_nums)):
+    del my_nums[i]
+    print(my_nums)
 
 # in this case, we do get an error. What causes the error?
+# a: when i = 4, the list is indexed as 0,1,2,3. this means that del my_nums[i] tries to delete something out of the
+# index range.

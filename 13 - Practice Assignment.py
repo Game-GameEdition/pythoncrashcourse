@@ -13,12 +13,30 @@ def even_numbers(num):
     # return a list of all even integers from 0 until 1 less than the number
     # For example, if the number is 6, return [0,2,4]
     
-    # write your code here    
-
+    # write your code here
+    even_num_list = []
+    for i in range(0, num, 2):
+        even_num_list.append(i)
+    
     # replace the return value your even number list
-    return []
+    return even_num_list
 
+# using a list comprehension!
 
+def even_numbers_1(num_1):
+
+    even_num_list_1 = [even_number_1 for even_number_1 in range(0, num_1, 2)]
+    return even_num_list_1
+
+# another method?
+
+def even_numbers_2(num_2):
+    # you see, this works just fine: even_num_list_2 = list(range(0, num_2, 2))
+    # why doesn't:
+    even_num_list_2 = list[range(0, num_2, 2)]
+    # work here?
+
+    return even_num_list_2
 # ---------------------------------------------------------------------------------- #
 
 
@@ -57,7 +75,27 @@ for i in range(len(cases)):
     else:
         print("Test",i+1,"FAILED. Case:",current_case,"Target Answer:",current_answer,"Your answer:",user_answer)
 
-    
+print("Now testing a different method.")
+
+for i in range(len(cases)):
+    current_case = cases[i]
+    current_answer = answers[i]
+    user_answer = even_numbers_1(current_case)
+    if (current_answer == user_answer):
+        print("Test",i+1,"PASSED.")
+    else:
+        print("Test",i+1,"FAILED. Case:",current_case,"Target Answer:",current_answer,"Your answer:",user_answer)
+
+print("Again!")
+
+for i in range(len(cases)):
+    current_case = cases[i]
+    current_answer = answers[i]
+    user_answer = even_numbers_2(current_case)
+    if (current_answer == user_answer):
+        print("Test",i+1,"PASSED.")
+    else:
+        print("Test",i+1,"FAILED. Case:",current_case,"Target Answer:",current_answer,"Your answer:",user_answer)
 
 
 

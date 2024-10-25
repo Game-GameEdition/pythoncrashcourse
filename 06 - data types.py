@@ -51,17 +51,17 @@ print("Hello " * 10)
 # BREAK IT:
 # What happens if you try to subtract a string from a string?
 #print("hello" - "hello!")
-# "-" doesnt support str operand type
+# a: "-" doesnt support str operand type
 
 # What happens if you multiply a string by a string?
 # print("hello" * "goodbye")
-# essentially, it is the same error. the types are different. terminal says "can't multiply sequence by non-int of 
+# a: essentially, it is the same error. the types are different. terminal says "can't multiply sequence by non-int of 
 # type 'str'"
 
 # What happens if you divide an integer by zero?
 # print(num1/0)
-# the error is that you can't divide by zero :(
+# a: the error is that you can't divide by zero :(
 
 # Why do these errors occur?
-# fundamentally, the operations/calculations you are trying to get the computer to do are unsupported by the datatypes
+# a: fundamentally, the operations/calculations you are trying to get the computer to do are unsupported by the datatypes
 # that you are using.

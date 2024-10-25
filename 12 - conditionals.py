@@ -27,9 +27,9 @@ y = 10
 
 if x < y:
     print(x,"is less than",y)
-else:
+# else:
     # notice the code in else is also indented, indicating it is within the else statement
-    print(x,"is not less than",y)
+    # print(x,"is not less than",y)
 
 # when we run the code above, it will first check if x (20) is less than y (10).
 # Because this is False, it will not run the code within the if statement.
@@ -38,6 +38,9 @@ else:
 # BREAK IT:
 # What happens if you delete the else statement above (along with the print underneath it)
 # Do you get an error?
+# no
 # Does anything print out?
+# a: also no
 # Why or why not?
+# a: there is simply nothing to do in the case that x < y is false.
 
