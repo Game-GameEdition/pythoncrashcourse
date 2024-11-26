@@ -57,4 +57,4 @@ def hanoi_solver(start, end, helper, disks):
         print(f"Move disk from {start} to {end}")
         hanoi_solver(helper, end, start, disks-1)
     
-hanoi_solver("A","C","B",4)
+hanoi_solver("A","C","B",2)
